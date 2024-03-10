@@ -4,28 +4,24 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Home", href: "#" },
+  { name: "Home", href: "/" },
   { name: "About Us", href: "#" },
   { name: "Our Products", href: "#" },
-  { name: "Contacts", href: "#" },
+  { name: "Contacts", href: "/contact-us" },
 ];
 
-export default function Example() {
+export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <header className="bg-white">
       <nav
-        className="flex items-center justify-between p-6 lg:px-8 max-w-7xl mx-auto"
+        className="flex items-center justify-between px-6 lg:px-8 max-w-7xl mx-auto h-16 lg:h-20"
         aria-label="Global"
       >
-        <a href="#" className="-m-1.5 p-1.5">
+        <a href="/">
           <span className="sr-only">Your Company</span>
-          <img
-            className="h-8 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt=""
-          />
+          <img className="lg:h-16 h-12 w-auto" src="/logo.png" alt="" />
         </a>
         <div className="flex lg:hidden">
           <button
@@ -58,13 +54,9 @@ export default function Example() {
         <div className="fixed inset-0 z-10" />
         <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
+            <a href="/">
               <span className="sr-only">Your Company</span>
-              <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt=""
-              />
+              <img className="h-12 w-auto" src="/logo.png" alt="" />
             </a>
             <button
               type="button"
