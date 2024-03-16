@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Hero = () => {
@@ -50,27 +51,31 @@ const Hero = () => {
             <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
               <div className="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                  We’re changing the way people connect.
+                  Welcome to Calzone Pharmaceuticals
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
-                  Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in
-                  quis cupidatat mollit aute velit. Et labore commodo nulla
-                  aliqua proident mollit ullamco exercitation tempor. Sint
-                  aliqua anim nulla sunt mollit id pariatur in voluptate cillum.
+                  Calzone Pharmaceuticals LLP is a licensed pharmaceuticals
+                  company specialized in distribution marketing of high standard
+                  products including prescription, over the counter (OTC)
+                  products, food supplements and natural health products. Since
+                  its foundation in 2020, Calzone Pharmaceuticals has focused on
+                  bringing the world&apos;s best healthcare products and
+                  registered a significant growth in business focusing on
+                  becoming as one of the most successful pharmaceutical firm. We
+                  aim to attain market leadership and cope with changing market
+                  trends in a competitive way towards enriching people&apos;s
+                  life. Calzone Pharmaceuticals situated in India with
+                  nationwide distribution network across major cities of India,
+                  The company customers include hospitals, pharmacies and
+                  government tenders.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
-                  <a
-                    href="#"
-                    className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Get started
-                  </a>
-                  <a
-                    href="#"
+                  <Link
+                    href="/about-us"
                     className="text-sm font-semibold leading-6 text-gray-900"
                   >
-                    Live demo <span aria-hidden="true">→</span>
-                  </a>
+                    Read More <span aria-hidden="true">→</span>
+                  </Link>
                 </div>
               </div>
               <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">

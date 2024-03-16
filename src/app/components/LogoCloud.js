@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Example() {
   return (
     <div className="bg-white py-24 sm:py-32">
@@ -42,12 +44,15 @@ export default function Example() {
         <div className="mt-16 flex justify-center">
           <p className="relative rounded-full bg-gray-50 px-4 py-1.5 text-sm leading-6 text-gray-600 ring-1 ring-inset ring-gray-900/5">
             <span className="hidden md:inline">
-              Over 2500 companies use our tools to better their business.
+              We have more than 2500 products.
             </span>
-            <a href="#" className="font-semibold text-indigo-600">
-              <span className="absolute inset-0" aria-hidden="true" /> Read our
-              customer stories <span aria-hidden="true">&rarr;</span>
-            </a>
+            <Link
+              href="/our-products"
+              className="font-semibold text-indigo-600"
+            >
+              <span className="absolute inset-0" aria-hidden="true" /> See all
+              our products <span aria-hidden="true">&rarr;</span>
+            </Link>
           </p>
         </div>
       </div>
